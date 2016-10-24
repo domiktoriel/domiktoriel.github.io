@@ -6,11 +6,11 @@
     window.onload = function(){
       if(document.location.search.length) {
         document.location.href = 'http://domiktoriel.myjino.ru/?' + document.location.search;
-        document.title = "blah";
       } else {
         document.location.href = 'http://domiktoriel.myjino.ru/';
-        document.title = "blah";
-      }       
+      }    
+      var metaList = document.getElementsByTagName("META");
+      metaList[0].setAttribute("title","test");
     }
   </script>
 </head>
